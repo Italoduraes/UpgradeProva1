@@ -69,9 +69,13 @@ public class Ligacao {
 	}
 	@Override
 	public String toString() {
-		return "Ligacao [codigo=" + codigo + ", numTelDestino=" + numTelDestino + ", dataHoraInicio=" + dataHoraInicio
-				+ ", dataHoraFim=" + dataHoraFim + ", cidadeDestino=" + cidadeDestino + ", UFDestino=" + UFDestino
-				+ ", cliente=" + cliente + "]";
+		return "Codigo da Ligacões: " + codigo + "\n" + 
+				"Numero do Telefone destino:" + numTelDestino + "\n" + 
+				"Data da hora de inicio: " + dataHoraInicio + "\n"
+				+ "Data da hora de Fim: " + dataHoraFim + "\n" + 
+				"Cidade de destino: " + cidadeDestino + "\n" +
+				"UF de destino: " + UFDestino + "\n"
+				+ "Cliente: " + cliente + "\n";
 	}
 	
 	

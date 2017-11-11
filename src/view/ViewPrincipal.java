@@ -11,9 +11,10 @@ public class ViewPrincipal {
 		public String getPpcao(){
 			
 			this.opcao =  JOptionPane.showInputDialog("Escolha uma aoção \n" +
-			"1 - Pesquisar cliente \n" /*+
-			"2 - Listar ligaçoes \n" */+
-			"2 - Sair \n");
+			"1 - Pesquisar cliente \n" +
+			"2 - Listar ligaçoes por cliente \n" +
+			"3 - Listar UF \n" +
+			"4 - Sair \n");
 			
 					
 		return this.opcao;			

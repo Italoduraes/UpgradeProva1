@@ -13,7 +13,10 @@ public class ControlePrincipal {
 		private ViewPrincipal vp;
 		private ControlePesquisaCliente cpc;
 	    private ControleCliente cc;
-	    
+	    private ControleLigacao cl;
+	    private ControlePesquisaLigacao cpl;
+	    private ControlePesquisaUF cpuf;
+	    private ControleUF cuf;
 	    
 	 // Metodo contrutor 
 		
@@ -27,6 +30,10 @@ public class ControlePrincipal {
 		// Criar controles 
 			this.cpc = new ControlePesquisaCliente(bds);
 			this.cc = new ControleCliente(bds);
+			this.cl = new ControleLigacao(bds);
+			this.cpl = new ControlePesquisaLigacao(bds);
+			this.cpuf = new ControlePesquisaUF(bds);
+			this.cuf = new ControleUF(bds);
 			
 			//Exibir a janela de opçoes pela primeira vez 
 			
@@ -42,10 +49,12 @@ public class ControlePrincipal {
 				case "1": this.cpc.pesquisarCliente();	
 					break;
 					
-			/*	case "2": this.cl.exibirLigacoes();	
-					break;*/
+				case "2": this.cpl.pesquisarLigacao();	
+					break;
 					
-				case "2": JOptionPane.showMessageDialog(null, "Até breve!" );	
+				case "3": this.cpuf.pesquisarUF();
+					
+				case "4": JOptionPane.showMessageDialog(null, "Até breve!" );	
 					return;
 					
 				default: JOptionPane.showMessageDialog(null, "Favor digitar um valor válido! ");

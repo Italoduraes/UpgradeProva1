@@ -2,16 +2,13 @@ package view;
 
 import javax.swing.JOptionPane;
 
-public class ViewSolicitaCadastro {
-	
+public class ViewSolicitaLigacao {
 	
 
 	//Atributos
 	private String cadastro;
 	
-	
-	
-	public ViewSolicitaCadastro() {
+	public ViewSolicitaLigacao() {
 		this.cadastro = 	
 				JOptionPane.showInputDialog("Digite o nome do cliente");
 		
